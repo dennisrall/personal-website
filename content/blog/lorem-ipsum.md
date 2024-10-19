@@ -1,5 +1,5 @@
 +++
-title = 'Lorem Impsum'
+title = 'Lorem Ipsum'
 date = 2024-10-18T10:54:32+02:00
 +++
 
