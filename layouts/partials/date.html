@@ -1,0 +1,3 @@
+{{ $date := .PublishDate.Format .Site.Params.dateFormat }}
+{{ $dateIso := .PublishDate.Format "2006-01-02" }}
+<time datetime="{{ $dateIso }}">{{ $date }}</time>

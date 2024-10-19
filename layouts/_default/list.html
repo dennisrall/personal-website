@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ range .Pages }}
+<h2>
+	<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h2>
+<div>
+	{{ partial "date.html" . }}
+</div>
+{{ partial "shift_headings_down.html" .Summary }}
+{{ if .Truncated }}
+<a href="{{ .RelPermalink }}">Read more...</a>
+{{ end }}
+
+{{ end }}
+
+{{ end }}
